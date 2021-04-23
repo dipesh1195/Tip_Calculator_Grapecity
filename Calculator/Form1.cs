@@ -32,7 +32,7 @@ namespace Calculator
             {
                 MessageBox.Show("Enter total Bill Amount");
             }
-            else if(Convert.ToInt64(total) < 0)
+            else if(double.Parse(total) < 0)
             {
                 MessageBox.Show("Bill Amount is less than 0");
             }
@@ -41,7 +41,7 @@ namespace Calculator
                 /*value we get from textbox is in string format so, inorder to perform
                   arithimatic operations converting string into int/float/double */
 
-                 totalamount = Convert.ToInt64(total);
+                 totalamount = double.Parse(total);
             }  
 
             //Geting Tip Percentage
@@ -75,11 +75,11 @@ namespace Calculator
                 {
                     //calculating total tip per person
                     double tip_per_person = (totalamount / people_number) * (tip_percentage / 100);
-                    result = Math.Round(tip_per_person, 2); //Using round function to show only 2 places after decimal
+                    result = Math.Round(tip_per_person, 2 , MidpointRounding.ToNegativeInfinity); //Using round function to show only 2 places after decimal
                     
                     //Calculating total amount per person
                     double amt_per_person = (totalamount / people_number) + tip_per_person;
-                    result1 = Math.Round(amt_per_person, 2); //Using round function to show only 2 places after decimal
+                    result1 = Math.Round(amt_per_person, 2 , MidpointRounding.ToNegativeInfinity); //Using round function to show only 2 places after decimal
 
                     tipperperson.Text = Convert.ToString("$ " + result);
                     totalperperson.Text = Convert.ToString("$ " + result1);
