@@ -29,8 +29,8 @@ namespace Calculator
         /// </summary>
         private void InitializeComponent()
         {
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SplitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.Button1 = new System.Windows.Forms.Button();
             this.tippercentage = new System.Windows.Forms.NumericUpDown();
             this.no_of_people = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
@@ -43,65 +43,65 @@ namespace Calculator
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel1.SuspendLayout();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SplitContainer1)).BeginInit();
+            this.SplitContainer1.Panel1.SuspendLayout();
+            this.SplitContainer1.Panel2.SuspendLayout();
+            this.SplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tippercentage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.no_of_people)).BeginInit();
             this.SuspendLayout();
             // 
-            // splitContainer1
+            // SplitContainer1
             // 
-            this.splitContainer1.Location = new System.Drawing.Point(12, 12);
-            this.splitContainer1.Name = "splitContainer1";
+            this.SplitContainer1.Location = new System.Drawing.Point(12, 12);
+            this.SplitContainer1.Name = "SplitContainer1";
             // 
-            // splitContainer1.Panel1
+            // SplitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.button1);
-            this.splitContainer1.Panel1.Controls.Add(this.tippercentage);
-            this.splitContainer1.Panel1.Controls.Add(this.no_of_people);
-            this.splitContainer1.Panel1.Controls.Add(this.label3);
-            this.splitContainer1.Panel1.Controls.Add(this.tip);
-            this.splitContainer1.Panel1.Controls.Add(this.amount);
-            this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
+            this.SplitContainer1.Panel1.Controls.Add(this.Button1);
+            this.SplitContainer1.Panel1.Controls.Add(this.tippercentage);
+            this.SplitContainer1.Panel1.Controls.Add(this.no_of_people);
+            this.SplitContainer1.Panel1.Controls.Add(this.label3);
+            this.SplitContainer1.Panel1.Controls.Add(this.tip);
+            this.SplitContainer1.Panel1.Controls.Add(this.amount);
+            this.SplitContainer1.Panel1.Controls.Add(this.label1);
+            this.SplitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.SplitContainer1_Panel1_Paint);
             // 
-            // splitContainer1.Panel2
+            // SplitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.totalperperson);
-            this.splitContainer1.Panel2.Controls.Add(this.tipperperson);
-            this.splitContainer1.Panel2.Controls.Add(this.label5);
-            this.splitContainer1.Panel2.Controls.Add(this.label6);
-            this.splitContainer1.Panel2.Controls.Add(this.label4);
-            this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Panel2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(765, 436);
-            this.splitContainer1.SplitterDistance = 255;
-            this.splitContainer1.TabIndex = 6;
+            this.SplitContainer1.Panel2.Controls.Add(this.totalperperson);
+            this.SplitContainer1.Panel2.Controls.Add(this.tipperperson);
+            this.SplitContainer1.Panel2.Controls.Add(this.label5);
+            this.SplitContainer1.Panel2.Controls.Add(this.label6);
+            this.SplitContainer1.Panel2.Controls.Add(this.label4);
+            this.SplitContainer1.Panel2.Controls.Add(this.label2);
+            this.SplitContainer1.Panel2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SplitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.SplitContainer1_Panel2_Paint);
+            this.SplitContainer1.Size = new System.Drawing.Size(765, 436);
+            this.SplitContainer1.SplitterDistance = 255;
+            this.SplitContainer1.TabIndex = 6;
             // 
-            // button1
+            // Button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(38, 273);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(141, 37);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.Button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Button1.Location = new System.Drawing.Point(29, 260);
+            this.Button1.Name = "Button1";
+            this.Button1.Size = new System.Drawing.Size(193, 56);
+            this.Button1.TabIndex = 13;
+            this.Button1.Text = "Calculate";
+            this.Button1.UseVisualStyleBackColor = true;
+            this.Button1.Click += new System.EventHandler(this.Button1_Click);
             // 
             // tippercentage
             // 
-            this.tippercentage.Location = new System.Drawing.Point(29, 138);
+            this.tippercentage.Location = new System.Drawing.Point(29, 113);
             this.tippercentage.Name = "tippercentage";
             this.tippercentage.Size = new System.Drawing.Size(150, 27);
             this.tippercentage.TabIndex = 12;
             // 
             // no_of_people
             // 
-            this.no_of_people.Location = new System.Drawing.Point(29, 209);
+            this.no_of_people.Location = new System.Drawing.Point(29, 184);
             this.no_of_people.Name = "no_of_people";
             this.no_of_people.Size = new System.Drawing.Size(150, 27);
             this.no_of_people.TabIndex = 11;
@@ -109,7 +109,8 @@ namespace Calculator
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(29, 185);
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label3.Location = new System.Drawing.Point(29, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(132, 20);
             this.label3.TabIndex = 10;
@@ -118,7 +119,8 @@ namespace Calculator
             // tip
             // 
             this.tip.AutoSize = true;
-            this.tip.Location = new System.Drawing.Point(29, 115);
+            this.tip.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.tip.Location = new System.Drawing.Point(29, 90);
             this.tip.Name = "tip";
             this.tip.Size = new System.Drawing.Size(46, 20);
             this.tip.TabIndex = 8;
@@ -127,7 +129,7 @@ namespace Calculator
             // amount
             // 
             this.amount.Cursor = System.Windows.Forms.Cursors.Default;
-            this.amount.Location = new System.Drawing.Point(29, 60);
+            this.amount.Location = new System.Drawing.Point(29, 48);
             this.amount.Name = "amount";
             this.amount.Size = new System.Drawing.Size(125, 27);
             this.amount.TabIndex = 7;
@@ -135,6 +137,7 @@ namespace Calculator
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(29, 25);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 20);
@@ -144,29 +147,30 @@ namespace Calculator
             // totalperperson
             // 
             this.totalperperson.AutoSize = true;
-            this.totalperperson.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.totalperperson.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.totalperperson.Location = new System.Drawing.Point(238, 228);
             this.totalperperson.Name = "totalperperson";
-            this.totalperperson.Size = new System.Drawing.Size(33, 37);
+            this.totalperperson.Size = new System.Drawing.Size(59, 40);
             this.totalperperson.TabIndex = 4;
-            this.totalperperson.Text = "0";
-            this.totalperperson.Click += new System.EventHandler(this.label8_Click);
+            this.totalperperson.Text = "$ 0";
+            this.totalperperson.Click += new System.EventHandler(this.Label8_Click);
             // 
             // tipperperson
             // 
             this.tipperperson.AutoSize = true;
-            this.tipperperson.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tipperperson.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tipperperson.Location = new System.Drawing.Point(238, 147);
             this.tipperperson.Name = "tipperperson";
-            this.tipperperson.Size = new System.Drawing.Size(33, 37);
+            this.tipperperson.Size = new System.Drawing.Size(54, 37);
             this.tipperperson.TabIndex = 4;
-            this.tipperperson.Text = "0";
-            this.tipperperson.Click += new System.EventHandler(this.label7_Click_1);
+            this.tipperperson.Text = "$ 0";
+            this.tipperperson.Click += new System.EventHandler(this.Label7_Click_1);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label5.Location = new System.Drawing.Point(52, 260);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 20);
@@ -186,6 +190,7 @@ namespace Calculator
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label4.Location = new System.Drawing.Point(52, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(80, 20);
@@ -205,17 +210,19 @@ namespace Calculator
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 460);
-            this.Controls.Add(this.splitContainer1);
+            this.ClientSize = new System.Drawing.Size(788, 455);
+            this.Controls.Add(this.SplitContainer1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Bill Calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.splitContainer1.Panel1.ResumeLayout(false);
-            this.splitContainer1.Panel1.PerformLayout();
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            this.splitContainer1.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.SplitContainer1.Panel1.ResumeLayout(false);
+            this.SplitContainer1.Panel1.PerformLayout();
+            this.SplitContainer1.Panel2.ResumeLayout(false);
+            this.SplitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SplitContainer1)).EndInit();
+            this.SplitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tippercentage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.no_of_people)).EndInit();
             this.ResumeLayout(false);
@@ -224,7 +231,7 @@ namespace Calculator
 
         #endregion
 
-        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.SplitContainer SplitContainer1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label tip;
         private System.Windows.Forms.TextBox amount;
@@ -237,7 +244,7 @@ namespace Calculator
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label totalperperson;
         private System.Windows.Forms.Label tipperperson;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Button1;
     }
 }
 
