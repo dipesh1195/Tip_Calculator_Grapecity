@@ -14,8 +14,26 @@ namespace Calculator
         private void SplitContainer1_Panel1_Paint(object sender, PaintEventArgs e){}
         private void SplitContainer1_Panel2_Paint(object sender, PaintEventArgs e) { }
         private void Label7_Click_1(object sender, EventArgs e) { }
-        private void Label8_Click(object sender, EventArgs e) { } 
- 
+        private void Label8_Click(object sender, EventArgs e) { }
+
+        //Button for Tip Percentage Increment by 1
+        private void Add_int(object sender, EventArgs e)
+        {
+            float tipin = float.Parse(tippercentage.Text);
+            if (tipin <= 99)
+                tipin++;
+            tippercentage.Text = Convert.ToString(tipin);
+        }
+        //Button for Tip Percentage Decrement by 1
+        private void Sub_int(object sender, EventArgs e)
+        {
+            float tipin = float.Parse(tippercentage.Text);
+            if (tipin > 0)
+                tipin--;
+            tippercentage.Text = Convert.ToString(tipin);
+        }
+
+
 
         private void Button1_Click(object sender, EventArgs e)
         {
@@ -52,7 +70,7 @@ namespace Calculator
             }
             else
             {
-                tip_percentage = Convert.ToInt32(tip_per);
+                tip_percentage = float.Parse(tip_per);
             }
                 
           
@@ -68,34 +86,36 @@ namespace Calculator
             }
             
 
-            if (totalamount >= 1 && people_number >= 1)
+            if (totalamount >= 1 && people_number >= 1 && tip_percentage >= 0)
             {
                 //Exception Handling
                 try  
                 {
                     //calculating total tip per person
                     double tip_per_person = (totalamount / people_number) * (tip_percentage / 100);
-                    result = Math.Round(tip_per_person, 2 , MidpointRounding.ToNegativeInfinity); //Using round function to show only 2 places after decimal
+                    result = Math.Round(tip_per_person, 2); //Using round function to show only 2 places after decimal
                     
                     //Calculating total amount per person
                     double amt_per_person = (totalamount / people_number) + tip_per_person;
-                    result1 = Math.Round(amt_per_person, 2 , MidpointRounding.ToNegativeInfinity); //Using round function to show only 2 places after decimal
+                    result1 = Math.Round(amt_per_person, 2 ); //Using round function to show only 2 places after decimal
 
                     tipperperson.Text = Convert.ToString("$ " + result);
                     totalperperson.Text = Convert.ToString("$ " + result1);
                 }
-                catch (Exception a)
+                catch (ArithmeticException a)
                 {
                     MessageBox.Show(a.ToString());
                 }
             }
             else
             {
-                MessageBox.Show("Missing Details");
+                MessageBox.Show("Enter Correct Values");
             }
             
 
 
         }
+
+       
     }
 }
