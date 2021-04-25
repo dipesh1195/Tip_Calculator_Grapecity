@@ -43,6 +43,7 @@ namespace Calculator
             double totalamount = 0;
             int people_number = 0;
             float tip_percentage = 0;
+            Boolean isdigit = false;
 
             //geting total Bill Amount from Textbox
             string total = amount.Text;
@@ -64,25 +65,25 @@ namespace Calculator
             {
                 tip_percentage = 0;
             }
-            else
+            else if (float.TryParse(tip_per, out tip_percentage))
             {
-                tip_percentage = float.Parse(tip_per);
+                isdigit = true;
             }
                 
           
             //Geting Number of People 
-            string no_people = no_of_people.Text;
-            if (Convert.ToInt32(no_people)==0)
+            string number_of_people = no_of_people.Text;
+            if (Convert.ToInt32(number_of_people)==0)
             {
                 MessageBox.Show("No. of people cannot be 0");
             }
             else
             {
-                people_number = Convert.ToInt32(no_people);
+                people_number = Convert.ToInt32(number_of_people);
             }
             
 
-            if (totalamount >= 1 && people_number >= 1 && tip_percentage >= 0)
+            if (totalamount >= 1 && people_number >= 1 && isdigit)
             {
                 //Exception Handling
                 try  
@@ -98,7 +99,7 @@ namespace Calculator
                     tipperperson.Text = Convert.ToString("$ " + final_tip_per_person);
                     totalperperson.Text = Convert.ToString("$ " + final_amount_per_person);
                 }
-                catch (ArithmeticException a)
+                catch (Exception a)
                 {
                     MessageBox.Show(a.ToString());
                 }
